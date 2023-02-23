@@ -22,7 +22,7 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea(.all)
-        //.background(Color(hue: 0.186, saturation: 0.391, brightness: 1.0))
+        //.background(Color(hue: 0.489, saturation: 0.605, brightness: 0.973))
     }
 }
 
