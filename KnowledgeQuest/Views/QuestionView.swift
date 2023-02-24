@@ -25,11 +25,19 @@ struct QuestionView: View {
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(.accentColor)
+                
+                AnswerRow(answer: Answer(text: "Joey", isCorrect: true))
+                AnswerRow(answer: Answer(text: "Michel", isCorrect: false))
+                
+                PrimaryButton(text: "Next")
+                
+                Spacer()
             }
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         //.background(Color(hue: 0.489, saturation: 0.605, brightness: 0.973))
+        .navigationBarHidden(true)
     }
 }
 
