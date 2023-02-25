@@ -19,7 +19,7 @@ struct ContentView: View {
                     Text("Test out your knowledge in science")
                         .foregroundColor(.accentColor)
                 }
-                
+    
                 NavigationLink {
                     TriviaView()
                 } label: {
