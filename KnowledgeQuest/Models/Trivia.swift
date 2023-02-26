@@ -18,8 +18,8 @@ struct Trivia: Decodable {
         var type: String
         var difficulty: String
         var question: String
-        var correct_answer: String
-        var incorrect_answers: [String]
+        var correctAnswer: String
+        var incorrectAnswers: [String]
         
         //In the &quot;S.T.A.L.K.E.R.&quot; series, which of these items can&#039;t be used to lower the player&#039;s accumulated radiation?
         //AttributedString help us to change to &quot; to readable string
@@ -34,8 +34,8 @@ struct Trivia: Decodable {
         
         var answers: [Answer] {
             do {
-                let correct = [Answer(text: try AttributedString(markdown: correct_answer), isCorrect: true)]
-                let incorrects = try incorrect_answers.map { answer in
+                let correct = [Answer(text: try AttributedString(markdown: correctAnswer), isCorrect: true)]
+                let incorrects = try incorrectAnswers.map { answer in
                     Answer(text: try AttributedString(markdown: answer), isCorrect: false)
                 }
                 
